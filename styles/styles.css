@@ -18,6 +18,7 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
+  --button-color: #ffea00;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -119,6 +120,15 @@ h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
 
+/* custom style */
+
+h2 {
+  font-family: var(--fontFamilySerif, "Asar", Georgia, "Times New Roman", Times, serif);
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+}
+
 p,
 dl,
 ol,
@@ -127,6 +137,10 @@ pre,
 blockquote {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
+}
+
+p{
+  font-size:14px;
 }
 
 code,
@@ -173,16 +187,16 @@ button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  padding: 1em 2.2em;
+  font-size: 13px;
+  text-transform: uppercase;
   font-family: var(--body-font-family);
   font-style: normal;
-  font-weight: 500;
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: var(--button-color);
+  color: var(--text-color);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -193,13 +207,11 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
   cursor: pointer;
 }
 
 button:disabled,
 button:disabled:hover {
-  background-color: var(--light-color);
   cursor: unset;
 }
 
@@ -229,7 +241,7 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+  margin: 70px 0;
 }
 
 main > .section > div {
@@ -239,7 +251,7 @@ main > .section > div {
 }
 
 main > .section:first-of-type {
-  margin-top: 0;
+  margin-top: 50px;
 }
 
 @media (width >= 900px) {

@@ -21,13 +21,73 @@
 
 @media (width >= 900px) {
   .columns > div {
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    width: 100%;
     flex-direction: unset;
-    gap: 24px;
   }
 
-  .columns > div > div {
+  .columns > div>div {
+    background-color: #ebebeb;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-preferred-size: 100%;
+    -webkit-box-flex: 1;
+    background-color: #ebebeb;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+;
+    flex-basis: 100%;
+    -ms-flex: 1;
     flex: 1;
-    order: unset;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 3.5em 2em 2em;
+  }
+
+  .columns > div > div.columns-img-col {
+    background-color: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-preferred-size: 100%;
+    -webkit-box-flex: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-basis: 100%;
+    -ms-flex: 2;
+    flex: 2;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding:0;
+  }
+
+  .columns > div > div.columns-img-col picture{
+    height: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    width: 100%;
+  }
+
+  .columns > div > div.columns-img-col img{
+    height: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    width: 100%;
   }
 }

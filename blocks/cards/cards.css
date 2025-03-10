@@ -25,3 +25,52 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+.cards h4{
+  text-transform: uppercase;
+}
+
+.cards h4 a{
+  font-weight: normal;
+  color: var(--black-color);
+  font-size: 18px;
+}
+
+.cards.people-card {
+  margin-top:40px
+}
+
+.cards.people-card li{
+  border:none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cards.people-card li h3,.cards.people-card li p{
+  margin-top:0;
+}
+.cards.people-card li img{
+  border-radius: 50%;
+  height: 164px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 164px;
+}
+
+.cards.people-card li .icon {
+  background: #000;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cards.people-card li .icon img{
+  width: 20px;
+  height: 20px;
+  border-radius: unset;
+  object-fit: contain;
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+  filter: invert(100%);
+}
