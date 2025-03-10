@@ -6,6 +6,11 @@ header .nav-wrapper {
   position: fixed;
 }
 
+header #nav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 header nav {
   box-sizing: border-box;
   display: grid;
@@ -52,6 +57,10 @@ header nav p {
 
 header nav a:any-link {
   color: currentcolor;
+  font-weight: lighter;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #202020;
 }
 
 /* hamburger */
@@ -167,6 +176,7 @@ header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
   font-size: var(--body-font-size-s);
+  float: right;
 }
 
 header nav .nav-sections ul > li {
